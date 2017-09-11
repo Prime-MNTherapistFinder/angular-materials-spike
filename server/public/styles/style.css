@@ -1,0 +1,21 @@
+body {
+    background-color: powderblue;
+}
+.container {
+    height: 800px;
+}
+.first-box {
+    background-color: turquoise;
+    height: 200px;
+    padding: 10px;
+    color: white;
+}
+
+.second-box {
+    background-color: tomato;
+    height: 200px;
+    padding: 10px;
+    color: white;
+
+}
+
