@@ -1,2 +1,24 @@
+.section {
+    width: 100%;
+}
+.box {
+    height: 200px;
+    color: white;
+    font-size: 2em;
+}
 
+.first-box {
+    background-color: turquoise;
+}
+
+.second-box {
+    background-color: tomato;
+}
+.third-box {
+    background-color: plum;
+}
+.row {
+    height: 800px;
+    background-color: lightcyan;
+}
 
