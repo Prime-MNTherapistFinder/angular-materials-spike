@@ -179,5 +179,5 @@ html:
 html:
 
 ```
-<i class="material-icons">local pizza</i>
+<i class="material-icons">local_pizza</i>
 ```
