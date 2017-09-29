@@ -1,6 +1,6 @@
 # angular-material-intro
----
-##Background
+
+## Background
 Bootstrap is the most popular web design framework
 
 Not the only one though: other tech companies have released their own frameworks, including Tinder, AirBnB, Ebay, and Google
@@ -19,7 +19,7 @@ Why not just use Bootstrap?
 
 [Angular Material Documentation](https://material.angularjs.org/latest/)
 
-##Layout
+## Layout
 Bootstrap is based on a grid layout, everything laid out in rows and columns
 
 Angular Material is based on a flex layout
@@ -101,7 +101,7 @@ h1 {
 }
 ```
 
-##Alerts / Dialogs
+## Alerts / Dialogs
 May have heard of Sweet Alerts from solo projects
 
 html:
@@ -137,7 +137,7 @@ myApp.controller('MaterialController', function($mdDialog) {
 
 $event is used to scope events
 
-##Toasts
+## Toasts
 Doesn't block UI, just alerts user
 
 Mimics Android design
@@ -160,7 +160,7 @@ myApp.controller('MaterialController', function($mdDialog, $mdToast) {
 });
 ```
 
-##Centering
+## Centering
 Anyone who has tried to center something horizontally and vertically at the same time knows that it's tough!
 
 html:
@@ -173,7 +173,7 @@ html:
 </div>
 ```
 
-##Material Icons
+## Material Icons
 [Material Icons Documentation](https://material.io/icons/)
 
 html:
