@@ -11,7 +11,7 @@ Angular and Angular Material are both created and maintained by Google
 
 Why not just use Bootstrap?
 
-- Bootstrap requires jQuery to property work
+- Bootstrap requires jQuery to properly work
 - Angular documentation suggests not using both Angular and jQuery to avoid errors
 - There is an option called UI Bootstrap that works with Angular, but that is outside the scope of this lecture, and may not always be supported
 - One downside to Angular Material is that it requires a lot of dependencies, which is why I have this repo with all of the necessary dependencies already sourced in
@@ -32,7 +32,7 @@ Angular Material documentation is full of code snippets you can use and play aro
 
 html:
 
-```
+```HTML
 <body ng-app="myApp">
 	<div layout="column">
 		<header>
@@ -49,10 +49,11 @@ html:
 			</div>
 		</div>
 	</div>
+</body>
 ```
 Can also set divs to be specific widths
 
-```
+```HTML
 <div layout="row">
 	<div flex="30" flex-gt-sm="20" class="first-box box">
 		Here flex is 30
@@ -67,7 +68,7 @@ Can also set divs to be specific widths
 ```
 Can add CSS like normal
 
-```
+```CSS
 header {
 	width: 100%;
 	padding-top: 20px;
@@ -106,7 +107,7 @@ May have heard of Sweet Alerts from solo projects
 
 html:
 
-```
+```HTML
 <div layout="row" layout-wrap layout-margin layout-align="center">
 	<md-button class="md-primary md-raised" ng-click="mc.showAlert($event)">Alert Dialog</md-button>
 </div>
@@ -114,7 +115,7 @@ html:
 
 controller:
 
-```
+```JavaScript
 myApp.controller('MaterialController', function($mdDialog) {
 	console.log('MaterialController loaded!');
 	
@@ -144,18 +145,16 @@ Mimics Android design
 
 html:
 
-```
+```HTML
 <md-button class="md-primary md-raised" ng-click="mc.openToast($event)">Show Toast</md-button>
 ```
 
 controller:
 
-```
+```JavaScript
 myApp.controller('MaterialController', function($mdDialog, $mdToast) {
 	vm.openToast = function(ev) {
-		$mdToast.show(
-			$mdToast.simple()
-				.textContent('Hello!'));
+		$mdToast.show($mdToast.simple().textContent('Hello!'));
 	};
 });
 ```
@@ -165,7 +164,7 @@ Anyone who has tried to center something horizontally and vertically at the same
 
 html:
 
-```
+```HTML
 <div layout="row" layout-align="center center">
 	<div class="box first-box">One</div>
 	<div class="box second-box">Two</div>
@@ -178,6 +177,6 @@ html:
 
 html:
 
-```
+```HTML
 <i class="material-icons">local_pizza</i>
 ```
