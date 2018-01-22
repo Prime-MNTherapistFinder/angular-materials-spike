@@ -1,50 +1,32 @@
+
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>Angular Material Fun!</title>
-        <!-- Angular and Angular-Route -->
-        <script src="vendors/angular.min.js" charset="utf-8"></script>
-        <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Angular Material Fun!</title>
+    <!-- Angular and Angular-Route -->
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
 
-        <!-- Angular Material -->
-        <link href="vendors/angular-material.css" rel="stylesheet" type="text/css">
-        <script src="vendors/angular-animate.min.js" charset="utf-8"></script>
-        <script src="vendors/angular-aria.min.js" charset="utf-8"></script>
-        <script src="vendors/angular-messages.min.js" charset="utf-8"></script>
-        <script src="vendors/angular-material.min.js" charset="utf-8"></script>
+    <!-- Angular Material -->
+    <link href="vendors/angular-material.css" rel="stylesheet" type="text/css">
+    <script src="vendors/angular-animate.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-aria.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-messages.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-material.min.js" charset="utf-8"></script>
 
-        <!-- Client Side -->
-        <script src="scripts/client.js" charset="utf-8"></script>
-        <script src="scripts/material.controller.js" charset="utf-8"></script>
+    <!-- Client Side -->
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <script src="scripts/material.controller.js" charset="utf-8"></script>
+    <script src="scripts/dialog.service.js" charset="utf-8"></script>
 
-        <!-- CSS -->
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-    </head>
-    <body ng-app="myApp">
-       <h1>Hello World</h1>
-       <div class="section">
-        <div ng-controller="MaterialController as mc">
-            <!-- <div layout="row" layout-xs="column">
-                <div flex class="first-box box">
-                    I'm above in mobile
-                </div>
-                <div flex class="second-box box">
-                    I'm below in mobile
-                </div>
-            </div>
-            <div layout="row" layout-wrap layout-margin layout-align="center">
-                <md-button class="md-primary md-raised" ng-click="mc.showAlert($event)">Alert Dialog</md-button>
-            </div> -->
-        
-            <div class="row" layout="row" layout-align="center center">
-                <div class="box first-box">One</div>
-                <div class="box second-box">Two</div>
-                <div class="box third-box">Three</div>
-            </div>
-       </div>
-       </div>
-           
-    </body>
+
+    <!-- CSS -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body ng-app="myApp">
+    
+    <ng-view></ng-view>
+       
+</body>
 </html>

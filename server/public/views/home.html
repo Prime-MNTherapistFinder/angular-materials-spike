@@ -1,0 +1,31 @@
+<h1>Hello World</h1>
+
+<div class="section" id="homeContent">
+
+
+
+     <div layout="row" layout-xs="column" id = "mainHello">
+         <div flex class="first-box box" layout-align="center center">
+        <h2>Hello World</h2>
+        <md-button class="md-primary md-raised" ng-click="vm.showTherapistInfo($event)">Show info</md-button>
+         </div>
+     </div>
+
+</div>
+
+
+
+<div layout="row">
+        <md-sidenav md-component-id="left" class="md-sidenav-left">
+        
+          Left Nav!
+          <md-button ng-click="vm.openLeftMenu()">
+                Close nav bar
+              </md-button>
+            </md-sidenav>
+      
+          <md-button ng-click="vm.openLeftMenu()">
+            Open Left Menu
+          </md-button>
+        </md-sidenav>
+      </div>

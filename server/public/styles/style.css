@@ -2,13 +2,14 @@
     width: 100%;
 }
 .box {
-    height: 200px;
+    height: 800px;
     color: white;
     font-size: 2em;
 }
 
 .first-box {
-    background-color: turquoise;
+    background-color: rgb(17, 204, 10);
+    height: 100%;
 }
 
 .second-box {
@@ -21,4 +22,14 @@
     height: 800px;
     background-color: lightcyan;
 }
+
+.md-dialog-content{
+    width: 800px;
+    height:600px;
+}
+
+.md-sidenav-left{
+    background-color: tomato;
+}
+
 

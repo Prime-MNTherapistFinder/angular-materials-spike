@@ -1,18 +1,11 @@
-myApp.controller('MaterialController', function($mdDialog) {
+myApp.controller('MaterialController', ['$mdDialog','DialogService','$mdSidenav',function($mdDialog, DialogService,$mdSidenav) {
     console.log('MaterialController');
 
     var vm = this;
 
-    vm.showAlert = function(event) {
-        console.log('Clicked!')
-        $mdDialog.show(
-            $mdDialog.alert()
-            .parent(angular.element(document.querySelector('#popupContainer')))
-            .title('Hi!!!')
-            .textContent('You can say other things')
-            .ariaLabel('Alert Dialog Demo')
-            .ok('Got it!')
-            .targetEvent(event)
-        )
-    }
-});
+    vm.showAlert = DialogService.showAlert;
+    vm.showTherapistInfo = DialogService.showTherapistInfo;
+    vm.answer = DialogService.answer;
+    vm.close = DialogService.close;
+    vm.openLeftMenu = DialogService.openLeftMenu;
+}]);
