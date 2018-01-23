@@ -32,4 +32,18 @@
     background-color: tomato;
 }
 
+#fakeNav{
+    width: 50px !important;
+    height: 700px;
+    background-color: tomato;
+    padding:0px;
+}
 
+.md-sidenav-left{
+    margin-top:60px;
+}
+
+#fakeNavClosedBar{
+    padding:0px;
+    margin:0px;
+}

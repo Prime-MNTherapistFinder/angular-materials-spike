@@ -1,20 +1,13 @@
-myApp.service('DialogService', ['$http','$mdDialog','$mdSidenav',function ($http, $mdDialog, $mdSidenav) {
+myApp.service('DialogService', ['$http','$mdDialog','$mdSidenav','$q',function ($http, $mdDialog, $mdSidenav,$q) {
     var vm = this;
     vm.status = '';
+    // vm.things = loadAll();
+    vm.repos = 'repo, repo1, repo2, repo3, repo4'
+    vm.issues = ''
 
-    vm.showAlert = function(event) {
-        console.log('Clicked!')
-        $mdDialog.show(
-            $mdDialog.alert()
-            .parent(angular.element(document.querySelector('#popupContainer')))
-            .title('Hi!!!')
-            .textContent('You can say other things')
-            .ariaLabel('Alert Dialog Demo')
-            .ok('Got it!')
-            .targetEvent(event)
-        )
-    }
 
+
+//FOR DIALOG BOXES
     vm.showTherapistInfo = function(event) {
         console.log('showTherapistInfo clicked');
         $mdDialog.show({
@@ -35,13 +28,20 @@ myApp.service('DialogService', ['$http','$mdDialog','$mdSidenav',function ($http
       vm.close = function() {
         $mdDialog.cancel();
       };
-    
+
+// FOR SIDENAV      
     //Documentation: https://material.angularjs.org/latest/api/directive/mdSidenav
       vm.openLeftMenu = function() {
         $mdSidenav('left').toggle();
       };
+
+
+
+
    
-    
+// FOR TYPEAHEAD
+
+
 
    
 }]);
