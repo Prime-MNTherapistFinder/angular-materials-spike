@@ -1,4 +1,4 @@
-myApp.service('DialogService', ['$http','$mdDialog','$mdSidenav','$q',function ($http, $mdDialog, $mdSidenav,$q) {
+myApp.service('DialogService', ['$http','$mdDialog','$mdSidenav','$q','$log',function ($http, $mdDialog, $mdSidenav,$q, $log) {
     var vm = this;
     vm.status = '';
     // vm.things = loadAll();
@@ -40,7 +40,6 @@ myApp.service('DialogService', ['$http','$mdDialog','$mdSidenav','$q',function (
 
    
 // FOR TYPEAHEAD
-
 
 
    
