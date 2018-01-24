@@ -41,6 +41,27 @@ myApp.service('DialogService', ['$http','$mdDialog','$mdSidenav','$q','$log',fun
    
 // FOR TYPEAHEAD
 
+vm.searchTextChange = function (text) {
+    $log.info('Text changed to ' + text);
+ }
+
+ vm.selectedItemChange = function (item) {
+    $log.info('Item changed to ' + JSON.stringify(item));
+ }
+ 
+
+var issues = [{
+    name: 'issueOne'
+},{
+    name: 'issueTwo'
+},{
+    name: 'issueThree'
+}]
+return {
+    loadAll : function(){
+        return $q.when(issues)       
+    } 
+}
 
    
 }]);

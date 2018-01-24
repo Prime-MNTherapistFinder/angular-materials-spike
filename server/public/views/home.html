@@ -25,26 +25,24 @@
                             
                                
                                <md-autocomplete
-                                  ng-disabled = "ctrl.isDisabled"
-                                  md-no-cache = "ctrl.noCache"
                                   md-selected-item = "ctrl.selectedItem"
                                   md-search-text-change = "ctrl.searchTextChange(ctrl.searchText)"
                                   md-search-text = "ctrl.searchText"
                                   md-selected-item-change = "ctrl.selectedItemChange(item)"
-                                  md-items = "item in ctrl.querySearch(ctrl.searchText)"
-                                  md-item-text = "item.display"
+                                  md-items = "item in ctrl.issues"
+                                  md-item-text = "item.name"
                                   md-min-length = "0"
-                                  placeholder = "US State?">
+                                  placeholder = "What are you looking for help with?">
                                   
                                   <md-item-template>
                                      <span md-highlight-text = "ctrl.searchText"
-                                        md-highlight-flags = "^i">{{item.display}}</span>
+                                        md-highlight-flags = "^i">{{item.name}}</span>
                                   </md-item-template>
 
                                   
                                   <md-not-found>
-                                     No states matching "{{ctrl.searchText}}" were found.
-                                     <a ng-click = "ctrl.newState(ctrl.searchText)">Create a new one!</a>
+                                     No issues matching "{{ctrl.searchText}}" were found.
+                                     <a ng-click = "ctrl.newIssue(ctrl.searchText)">Please pick an issue from the list.</a>
                                   </md-not-found>
 
 
@@ -54,11 +52,11 @@
                                
                                
                             </form>
-                            <md-button ng-click = "ctrl.selectedStateArray(ctrl.searchText)">add</md-button>
+                            <md-button ng-click = "ctrl.selectedIssuesArray(ctrl.searchText)">add</md-button>
 
                          </md-content>
-                         <ul ng-repeat = "state in ctrl.newStateArray">
-                              <li>  {{state}}</li>
+                         <ul ng-repeat = "issue in ctrl.newStateArray">
+                              <li>  {{issue}}</li>
 
                          </ul>
     </div>
