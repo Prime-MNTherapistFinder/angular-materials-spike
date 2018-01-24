@@ -57,6 +57,7 @@ var issues = [{
 },{
     name: 'issueThree'
 }]
+
 return {
     loadAll : function(){
         return $q.when(issues)       
